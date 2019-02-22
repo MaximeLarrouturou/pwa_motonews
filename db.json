@@ -1,0 +1,78 @@
+{
+  "motos": [
+    {
+      "id": 1,
+      "name": "MotoGP",
+      "description": "Toutes les dernières news concernant le Championnat du Monde moto. Tous les pilotes, résultats, calendrier, courses et circuits de chaque Grand Prix',",
+      "url": "http://www.motogp.com/fr"
+    },
+    {
+      "id": 2,
+      "name": "WSBK",
+      "description": "Championnat du monde SuperBike",
+      "url": "http://www.worldsbk.com/fr"
+    },
+    {
+      "id": 3,
+      "name": "Motorsport",
+      "description": "Tous sur la moto - Actualités, classements, résultats des courses, statistiques, photos",
+      "url": "https://fr.motorsport.com/category/moto/"
+    },
+    {
+      "id": 4,
+      "name": "Supermotard France",
+      "description": "Championnat de France Supermotard",
+      "url": "https://www.supermotard-france.fr/"
+    },
+    {
+      "name": "Macau GP",
+      "description": "Tous sur le Grand Prix de Macau",
+      "url": "https://www.macau.grandprix.gov.mo/zh-hant/",
+      "id": 5
+    }
+  ],
+  "sbk": [
+    {
+      "id": 5,
+      "name": "MFJ Superbike",
+      "description": "Tous sur le championnat de superbike Japonais",
+      "url": "http://www.superbike.jp/"
+    },
+    {
+      "id": 6,
+      "name": "BSB",
+      "description": "Tous sur le championnat de superbike British",
+      "url": "https://www.britishsuperbike.com/"
+    },
+    {
+      "id": 7,
+      "name": "MOTOAMERICA",
+      "description": "Tous sur le championnat de superbike Américain",
+      "url": "https://motoamerica.com/"
+    },
+    {
+      "id": 8,
+      "name": "FSBK",
+      "description": "Tous sur le championnat de superbike Français",
+      "url": "https://www.fsbk.fr/"
+    },
+    {
+      "name": "ASBK",
+      "description": "Tous sur le championnat de superbike d'australie",
+      "url": "https://www.asbk.com.au/",
+      "id": 9
+    },
+    {
+      "name": "CSBK",
+      "description": "Tous savoir sur le championnat de superbike canadiens",
+      "url": "https://www.csbk.ca/",
+      "id": 10
+    },
+    {
+      "name": "RFME",
+      "description": "Tous savoir sur le superbike espagnol",
+      "url": "http://www.rfme.com/web/",
+      "id": 11
+    }
+  ]
+}
