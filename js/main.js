@@ -39,12 +39,28 @@ if(navigator.serviceWorker) {
         .catch(err => console.error('service worker NON enregistré', err));
 }
 
-if (window.Notification && window.Notification !== 'denied') {
-    Notification.requestPermission(perm => {
-        if(perm === 'granted') {
-            const notif = new Notification('Bienvenue sur MotoNews');
-        } else {
-            console.log('autorisation de recevoir des notification réfusée');
-        } 
-    })
-}
+//Notifiaction dite "non persistante"//
+
+//Cette méthode est utilisée pour demander à l'utilisateur s'il autorise la page à afficher des notifications.
+
+//PROPRIETES STATIQUES//
+    //Une chaîne représentant l'autorisation actuelle d'afficher des notifications. 
+        //Les valeurs possibles sont les suivantes: 
+            //denied(l'utilisateur refuse l'affichage des notifications), 
+            //granted(l'utilisateur accepte d'afficher les notifications) 
+            //ou default(le choix de l'utilisateur est inconnu et, par conséquent, le navigateur agira comme si la valeur était refusée).
+//
+
+//if (window.Notification && window.Notification !== 'denied') {
+//    Notification.requestPermission(perm => {
+//        if(perm === 'granted') {
+//            const options = {
+//                body:'Tous sur les grands prix moto',
+//                icon:'images/icons/icon-72x72.png'
+//            };
+//            const notif = new Notification('Bienvenue sur MotoNews', options);
+//        } else {
+//            console.log('autorisation de recevoir des notification réfusée');
+//        } 
+//    })
+//}
