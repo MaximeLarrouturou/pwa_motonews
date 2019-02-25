@@ -48,7 +48,33 @@ self.addEventListener('fetch', evt => {
             caches.open(cacheName).then(cache => cache.put(evt.request, res));
             // we clone it as a response can be read only once (it's like a one time read stream)
             return res.clone();
-        })
-        .catch(err => caches.match(evt.request))
+        }).catch(err => {
+            console.log(`${evt.request.url} fetch depuis le service worker`);
+            return caches.match(evt.request);
+         })
     );
+});
+
+self.registration.showNotification('Bienvenue sur MotoNews', {
+    body:'Tous sur les grands prix moto',
+    icon:'images/icons/icon-72x72.png',
+    actions: [
+        {action: 'accept', title: 'Accepté'},
+        {action: 'refuse', title:'Refusé'}
+    ]
+});
+
+self.addEventListener('notificationclose', evt => {
+    console.log('notification fermée', evt);
+});
+
+self.addEventListener('notificationclick', evt => {
+    if(evt.action === 'accept') {
+        console.log('vous avez accepté');
+    } else if(evt.action === 'refuse') {
+        console.log('vous avez refusé')
+    } else {
+        console.log('vous avez cliqué sur la notification (pas sur un des boutons)')
+    }
+    evt.notification.close();
 });
