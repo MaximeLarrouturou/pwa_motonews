@@ -55,9 +55,10 @@ self.addEventListener('fetch', evt => {
     );
 });
 
+//Notification du service worker, pour accepté/refusé la 'shownotification'//
 self.registration.showNotification('Bienvenue sur MotoNews', {
     body:'Tous sur les grands prix moto',
-    icon:'images/icons/icon-72x72.png',
+    icon:'images/icons/icon-72x72.png', 
     actions: [
         {action: 'accept', title: 'Accepté'},
         {action: 'refuse', title:'Refusé'}
@@ -77,4 +78,12 @@ self.addEventListener('notificationclick', evt => {
         console.log('vous avez cliqué sur la notification (pas sur un des boutons)')
     }
     evt.notification.close();
+});
+
+//Ecouter un événement 'push', qui se produiré si un push server nous envoi une notification  
+self.addEventListener('push', evt =>  {
+    console.log(evt);
+    console.log('data envoyée par la push notification des dev tools : ', evt.data.text())
+    var title = evt.data.text();
+    evt.waitUntil(self.registration.showNotification(title, { body: 'ça marche :)', image: 'images/icons/icon-152x152.png'}));
 });
