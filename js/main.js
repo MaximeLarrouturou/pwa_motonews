@@ -1,4 +1,3 @@
-console.log('main ok');
 const motosDiv = document.querySelector('#motos');
 
 
@@ -22,26 +21,77 @@ function loadTechnologies(motos) {
         .then(response => { //envoi de la promesse
             response.json() // réponse à la promesse du JSON
                 .then(motos => { //si la promesse est résolu il envoi le JSON
-                const allMotos = motos.map(t => `<div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet"><div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">${t.name}</h2></div><div class="mdl-card__supporting-text">${t.description}</div><div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="${t.url}">site de ${t.name}</a></div><div class="mdl-card__menu"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button></div></div></div>`)
+                    const allMotos = motos.map(t => `<div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet"><div class="demo-card-wide mdl-card mdl-shadow--2dp"><div class="mdl-card__title"><h2 class="mdl-card__title-text">${t.name}</h2></div><div class="mdl-card__supporting-text">${t.description}</div><div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="${t.url}">site de ${t.name}</a></div><div class="mdl-card__menu"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button></div></div></div>`)
                         .join('');
 
-                    motosDiv.innerHTML = allMotos; 
+                    motosDiv.innerHTML = allMotos;
                     console.log('Liste de  motos ', motos);
                 });
-            })
-            // Si motos est rejetée
-            .catch(console.error);
+        })
+        // Si motos est rejetée
+        .catch(console.error);
 
-            
+
 }
-
-
 
 loadTechnologies(motos);
 
-if(navigator.serviceWorker) {
+// retrieved from https://github.com/web-push-libs/web-push readme
+// and used to convert base64 string to Uint8Array == to an array buffer
+function urlBase64ToUint8Array(base64String) {
+    const padding = '='.repeat((4 - base64String.length % 4) % 4);
+    const base64 = (base64String + padding)
+        .replace(/\-/g, '+')
+        .replace(/_/g, '/');
+
+    const rawData = window.atob(base64);
+    const outputArray = new Uint8Array(rawData.length);
+
+    for (let i = 0; i < rawData.length; ++i) {
+        outputArray[i] = rawData.charCodeAt(i);
+    }
+    return outputArray;
+}
+
+if (navigator.serviceWorker) {
     navigator.serviceWorker
-        .register('../sw.js')
+        .register('sw.js')
+        .then(registration => {
+            // public vapid key generate with web-push command line 
+            const publicKey = 'BLKHcf6jHGxPAtFotj3iQ-Vvc_w4qx6zPbuJ-hnQqI1s-CT607OyDBDQ6c7QpksvKeOwdNH5VL8MxNuOftJS8E0';
+            registration.pushManager.getSubscription().then(subscription => {
+                if (subscription) {
+                    console.log('subscription', subscription);
+                    // no more keys proprety directly visible on the subscription objet. So you have to use getKey()
+                    const keyArrayBuffer = subscription.getKey('p256dh');
+                    const authArrayBuffer = subscription.getKey('auth');
+                    const p256dh = btoa(String.fromCharCode.apply(null, new Uint8Array(keyArrayBuffer)));
+                    const auth = btoa(String.fromCharCode.apply(null, new Uint8Array(authArrayBuffer)));
+                    console.log('p256dh key', keyArrayBuffer, p256dh);
+                    console.log('auth key', authArrayBuffer, auth);
+                    extractKeysFromArrayBuffer(subscription);
+                    return subscription;
+                } else {
+                    // ask for a subscription 
+                    const convertedKey = urlBase64ToUint8Array(publicKey);
+                    return registration.pushManager.subscribe({
+                        userVisibleOnly: true,
+                        applicationServerKey: convertedKey
+                    })
+                        .then(newSubscription => {
+                            // TODO post to a subscription DB
+                            console.log('newSubscription', newSubscription);
+                            // no more keys proprety directly visible on the subscription objet. So you have to use getKey()
+                            const key = subscription.getKey('p256dh');
+                            const auth = subscription.getKey('auth');
+                            console.log('p256dh key', key);
+                            console.log('auth key', auth);
+                            extractKeysFromArrayBuffer(subscription);
+                            return subscription;
+                        })
+                }
+            })
+        })
         .catch(err => console.error('service worker NON enregistré', err));
 }
 

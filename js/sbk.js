@@ -15,6 +15,7 @@ function loadTechnologies(sbk) {
                         .join('');
 
                     sbkDiv.innerHTML = allSbk; 
+                    console.log('Liste de  motos ', sbk);
                 });
             })
             // Si motos est rejetée
