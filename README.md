@@ -2,6 +2,8 @@
 <p>1<sup>er</sup> npm run jsonserver</p>
 <p>2<sup>nd</sup> npm start</p> 
 
+<p>si jsonserver et live-serve ne fonctionne pas. Installer, npm install -g live-server et npm install -g json-server</p>
+
 <h2>1) Création de l'application destinée à devenir une PWA </h2>
   <p>- Récupération du code source et configuration d'un serveur live-server</p>
   <p>- Créer un API REST à l'aide de json-server</p>
