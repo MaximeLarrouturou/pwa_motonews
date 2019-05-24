@@ -1,13 +1,13 @@
 /* CSS */
-body {
+body 
+{
   background: #f2f2f2;
 }
-
-a{
+a
+{
   text-decoration: none;
   color: #ffffff;
 }
-
 img
 {
     width: 100%;
@@ -16,80 +16,96 @@ img
     left: 0;
     bottom: 126px;
 }
-
 h2
 {
   z-index: 2;
 }
-
 #motos, #sbk
 {
   width: 1440px;
 }
-
 /* CSS */
 
-
 /* MATERIEL DESIGN */
-
 .demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
+.demo-layout-transparent .mdl-layout__drawer-button 
+{
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: black;
 }
-
 .mdl-layout__header, .mdl-layout__header-row
 {
   background-color: #ffffff;
   height: 8em;
 }
-
 a, .mdl-navigation
 {
   color: #232526!important;
 }
-
-.mdl-layout__header .mdl-layout__drawer-button {
+.mdl-layout__header .mdl-layout__drawer-button 
+{
   padding: 12px;
   margin-top: 1.27em;
 }
-
-.mdl-layout__drawer-button {
+.mdl-layout__drawer-button 
+{
   height: auto;
   width: auto;
   color: #232526!important;
 }
-
-.mdl-layout-title .mobile {
+.mdl-layout-title .mobile 
+{
   color:#000000;
 }
-
-.demo-card-wide.mdl-card {
+.demo-card-wide.mdl-card 
+{
   width: auto;
   height: 300px;
 }
-.demo-card-wide > .mdl-card__title {
+.demo-card-wide > .mdl-card__title 
+{
   color: #fff;
   font-weight: bolder;
   height: 300px;
   background: #000000;/* fallback for old browsers */
 
 }
-.demo-card-wide > .mdl-card__menu {
+.demo-card-wide > .mdl-card__menu 
+{
   color: #fff;
 }
-.mdl-card__supporting-text{
+.mdl-card__supporting-text
+{
   height:80px;
 }
-
-.mdl-button--fab {
+.mdl-button--fab 
+{
   bottom: 20px;
   right: 20px;
   position: absolute;
   z-index: 1;;
 }
-
-.form{
+.form
+{
   text-align: center;
 }
+/* MATERIEL DESIGN */
+
+/* MEDIA QUERY */
+@media only screen and (max-width:800px)
+{ 
+  #motos, #sbk
+  {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width:1440px)
+{ 
+  #motos, #sbk
+  {
+    width: auto;
+  }
+}
+/* MEDIA QUERY */
