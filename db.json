@@ -1,17 +1,64 @@
 {
+  "menu": [
+    {
+      "id": 1,
+      "name": "FFM",
+      "url": "https://www.ffmoto.org"
+    },
+    {
+      "id": 2,
+      "name": "SBK",
+      "url": "pages/superbike.html"
+    },
+    {
+      "id": 3,
+      "name": "HighSide",
+      "url": "https://highside-moto.com"
+    },
+    {
+      "id": 4,
+      "name": "Kawasaki Officiel",
+      "url": "https://www.kawasaki.eu/en/products"
+    }
+  ],
+
+  "mobile": [
+    {
+      "id": 1,
+      "name": "FFM",
+      "url": "https://www.ffmoto.org"
+    },
+    {
+      "id": 2,
+      "name": "SBK",
+      "url": "pages/superbike.html"
+    },
+    {
+      "id": 3,
+      "name": "HighSide",
+      "url": "https://highside-moto.com"
+    },
+    {
+      "id": 4,
+      "name": "Kawasaki Officiel",
+      "url": "https://www.kawasaki.eu/en/products"
+    }
+  ],
+
+
   "motos": [
     {
       "id": 1,
       "name": "MotoGP",
       "description": "Toutes les dernières news concernant le Championnat du Monde moto. Tous les pilotes, résultats, calendrier, courses et circuits de chaque Grand Prix',",
-      "url": "http://www.motogp.com/fr",
+      "url": "https://www.motogp.com/fr",
       "blanket": "http://www.hiskill.it/wp-content/uploads/2018/10/motogp-cover-post.jpg"
     },
     {
       "id": 2,
       "name": "WSBK",
       "description": "Championnat du monde SuperBike",
-      "url": "http://www.worldsbk.com/fr",
+      "url": "https://www.worldsbk.com/fr",
       "blanket": "http://photos.worldsbk.com/2019/05/12/20190512_sat2_wsbk_05_ita_sbk_sprace_001.mov.11_36_08_23_big.jpg"
     },
     {
@@ -37,12 +84,14 @@
       "id": 5
     }
   ],
+
+
   "sbk": [
     {
       "id": 5,
       "name": "MFJ Superbike",
       "description": "Tous sur le championnat de superbike Japonais",
-      "url": "http://www.superbike.jp/",
+      "url": "https://www.superbike.jp/",
       "blanket": "https://blanketplay.com/walls/full/4/6/d/239419.jpg"
     },
     {
@@ -83,7 +132,7 @@
     {
       "name": "RFME",
       "description": "Tous savoir sur le superbike espagnol",
-      "url": "http://www.rfme.com/web/",
+      "url": "https://www.rfme.com/web/",
       "blanket": "https://blanketplay.com/walls/full/4/6/d/239419.jpg",
       "id": 11
     }

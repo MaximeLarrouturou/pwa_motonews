@@ -3,7 +3,7 @@ const sbkDiv = document.querySelector('#sbk')
 
 
 function loadTechnologies(sbk) {
-    //On ajoute le fetch('http://localhost:3001/motos') pour qu'il fasse une requête sur l'URL du serveur (pour ce cas sur db.json qui est sur port 3001)
+    //On ajoute le fetch('http://localhost:3001/{mon JSON}') pour qu'il fasse une requête sur l'URL du serveur (pour ce cas sur db.json qui est sur port 3001)
     fetch('http://localhost:3001/sbk')
         //
         // La promesse est envoyé

@@ -9,39 +9,37 @@
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-deep_orange.min.css">
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
         <link href="../css/style.css" rel="stylesheet">
-      </head>   
-        <body>
-            <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      </head>    
+      <body>     
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-                <header class="mdl-layout__header">
-                  <div class="mdl-layout__header-row">
-                    <!-- Titre -->
-                    <span class="mdl-layout-title"><a href="../index.html">Moto News</a></span>
-                    <!-- Titre -->
-                    <!-- Espace entre le titre et le menu -->
-                    <div class="mdl-layout-spacer"></div>
-                    <!-- Espace entre le titre et le menu -->
+            <header class="mdl-layout__header">
+              <div class="mdl-layout__header-row">
+                <!-- Titre -->
+                <span class="mdl-layout-title"><a href="../index.html">Moto News</a></span>
+                <!-- Titre -->
+
+                <!-- Espace entre le titre et le menu -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Espace entre le titre et le menu -->
+
                     <!-- Menu Desktop -->
-                    <nav class="mdl-navigation mdl-layout--large-screen-only">
-                      <a class="mdl-navigation__link" href="https://www.ffmoto.org/">FFM</a>
-                      <a class="mdl-navigation__link" href="superbike.html">SBK</a>
-                      <a class="mdl-navigation__link" href="https://www.highside-moto.com/">HighSide</a>
-                      <a class="mdl-navigation__link" href="https://www.kawasaki.eu/en/products">Kawasaki Officiel</a>
+                    <nav class="mdl-navigation mdl-layout--large-screen-only" id="menu">
+                      <!-- ... Mes liens -->
                     </nav>
                     <!-- Menu Desktop -->
-                  </div>
-                </header>
-                <!-- Mode Mobile -->
-                <div class="mdl-layout__drawer hide">
-                  <span class="mdl-layout-title mobile"><a href="../index.html">Moto News</a></span>
-                  <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="https://www.ffmoto.org/">FFM</a>
-                    <a class="mdl-navigation__link" href="superbike.html">SBK</a>
-                    <a class="mdl-navigation__link" href="https://www.highside-moto.com/">HighSide</a>
-                    <a class="mdl-navigation__link" href="https://www.kawasaki.eu/en/products">Kawasaki Officiel</a>
-                  </nav>
-                </div>
-                <!-- Mode Mobile-->
+              </div>
+            </header>
+
+            <!-- Mode Mobile -->
+            <div class="mdl-layout__drawer hide" >
+              <span class="mdl-layout-title mobile"><a href="index.html">Moto News</a></span>
+              <nav class="mdl-navigation" id="mobile">
+                <!-- ... Mes liens -->
+              </nav>
+            </div>
+            <!-- Mode Mobile-->
+
                 <!--Contenu de la page-->
                 <main class="mdl-layout__content">
                   <div class="page-content">  
@@ -74,5 +72,7 @@
                 </main>
             </div>                   
           <script src="../js/add_moto.js"></script>
+          <script src="../js/menu.js"></script> 
+          <script src="../js/mobile.js"></script>         
         </body>
   </html>

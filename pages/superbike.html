@@ -18,44 +18,59 @@
                 <!-- Titre -->
                 <span class="mdl-layout-title"><a href="../index.html">Moto News</a></span>
                 <!-- Titre -->
+
                 <!-- Espace entre le titre et le menu -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Espace entre le titre et le menu -->
+
                     <!-- Menu Desktop -->
-                    <nav class="mdl-navigation mdl-layout--large-screen-only">
-                      <a class="mdl-navigation__link" href="https://www.ffmoto.org/">FFM</a>
-                      <a class="mdl-navigation__link" href="superbike.html">SBK</a>
-                      <a class="mdl-navigation__link" href="https://www.highside-moto.com/">HighSide</a>
-                      <a class="mdl-navigation__link" href="https://www.kawasaki.eu/en/products">Kawasaki Officiel</a>
-                      <!--<a class="mdl-navigation__link" href="contact.html">Contact</a>-->
+                    <nav class="mdl-navigation mdl-layout--large-screen-only" id="menu">
+                      <!-- ... Mes liens -->
                     </nav>
                     <!-- Menu Desktop -->
               </div>
             </header>
+
             <!-- Mode Mobile -->
-            <div class="mdl-layout__drawer hide">
-              <span class="mdl-layout-title mobile"><a href="../index.html">Moto News</a></span>
-              <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="https://www.ffmoto.org/">FFM</a>
-                <a class="mdl-navigation__link" href="superbike.html">SBK</a>
-                <a class="mdl-navigation__link" href="https://www.highside-moto.com/">HighSide</a>
-                <a class="mdl-navigation__link" href="https://www.kawasaki.eu/en/products">Kawasaki Officiel</a>
+            <div class="mdl-layout__drawer hide" >
+              <span class="mdl-layout-title mobile"><a href="index.html">Moto News</a></span>
+              <nav class="mdl-navigation" id="mobile">
+                <!-- ... Mes liens -->
               </nav>
             </div>
             <!-- Mode Mobile-->
+
             <!--Contenu de la page-->
             <main class="mdl-layout__content">
               <div class="page-content">
-                <div class="mdl-grid" id="sbk"></div>        
+                <div class="mdl-grid" id="sbk">
+                  <!-- ... Mon contenu -->
+                </div> 
+                <div class="mdl-grid">
+                    <a href="pages/add_sbk.html">
+                      <button id="tt3" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </a>
+                 </div> 
+                 <div class="mdl-tooltip mdl-tooltip--left" for="tt3">
+                    Ajouter un article
+                  </div>      
               </div>
             </main>
-        </div>
-        <!-- Colored FAB button -->
-        <a href="add_sbk.html">
-            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-              <i class="material-icons">add</i>
-            </button>
-        </a>        
+            <!--Contenu de la page-->
+            <footer class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                  <!-- Titre -->
+                    <span class="mdl-layout-text"><a href="index.html">Réalisé avec <span class="amour" style="color:#ff0000;">♥</span> Moto News</a></span>
+                  <!-- Titre -->
+                  <!-- Espace entre le titre et le menu -->
+                  <div class="mdl-layout-spacer"></div>
+                </div>
+              </footer>
+        </div>       
         <script src="../js/sbk.js"></script>
+        <script src="../js/menu.js"></script> 
+        <script src="../js/mobile.js"></script> 
       </body>
 </html>

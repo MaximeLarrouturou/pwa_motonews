@@ -89,10 +89,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', end
 }
 .mdl-button--fab 
 {
-  bottom: 20px;
+  bottom: 130px;
   right: 20px;
-  position: absolute;
+  position: fixed;
   z-index: 1;;
+  background-color: #393939!important;
+  color:#ffffff!important;
 }
 .form
 {
