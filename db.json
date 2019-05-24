@@ -8,7 +8,7 @@
     {
       "id": 2,
       "name": "SBK",
-      "url": "pages/superbike.html"
+      "url": "./pages/superbike.html"
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@
     {
       "id": 2,
       "name": "SBK",
-      "url": "pages/superbike.html"
+      "url": "./pages/superbike.html"
     },
     {
       "id": 3,

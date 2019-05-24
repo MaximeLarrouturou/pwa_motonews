@@ -37,7 +37,11 @@ h2
 .mdl-layout__header, .mdl-layout__header-row
 {
   background-color: #ffffff;
-  height: 8em;
+  height: 5em;
+}
+.footer
+{
+  height:8rem;
 }
 a, .mdl-navigation
 {
