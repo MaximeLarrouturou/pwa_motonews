@@ -14,7 +14,7 @@ img
     position: absolute;
     z-index: 1;
     left: 0;
-    bottom: 126px;
+    bottom: 155px;
 }
 h2
 {
@@ -61,14 +61,20 @@ a, .mdl-navigation
 .demo-card-wide.mdl-card 
 {
   width: auto;
-  height: 300px;
+  height: 350px;
 }
 .demo-card-wide > .mdl-card__title 
 {
   color: #fff;
   font-weight: bolder;
-  height: 300px;
-  background: #000000;/* fallback for old browsers */
+  height: 220px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e0e0e0+1,ededed+100 */
+background: #e0e0e0; /* Old browsers */
+background: -moz-linear-gradient(left,  #e0e0e0 1%, #ededed 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #e0e0e0 1%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #e0e0e0 1%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ededed',GradientType=1 ); /* IE6-9 */
+
 
 }
 .demo-card-wide > .mdl-card__menu 
@@ -78,6 +84,8 @@ a, .mdl-navigation
 .mdl-card__supporting-text
 {
   height:80px;
+  font-size: 1.1rem;
+  line-height: 22px;
 }
 .mdl-button--fab 
 {

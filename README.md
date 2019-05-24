@@ -2,11 +2,11 @@
 
 
 ## npm run jsonserver
-  If **jsonserver** don't run, so use command line `npm install -g json-server`.
-   Using **live-server**, your browser refreshed automatically, use command line `npm install -g live-server`.
+  * If **jsonserver** don't run, so use command line `npm install -g json-server`.
+  * Using **live-server**, your browser refreshed automatically, use command line `npm install -g live-server`.
 
 ## npm start
-  If npm start don't run, so use command line `npm install`.
+  * If npm start don't run, so use command line `npm install`.
 
 1. Création de l'application destinée à devenir une PWA
 > Récupération du code source et configuration d'un serveur live-server
