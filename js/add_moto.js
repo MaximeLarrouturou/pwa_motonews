@@ -1,6 +1,7 @@
 const motonameField = document.querySelector('#moto-name');
 const motoDescriptionField = document.querySelector('#moto-description');
 const motoUrlField = document.querySelector('#moto-url');
+const motoImgField = document.querySelector('#moto-img');
 const addMotoForm = document.querySelector('#add-moto-form');
 
 addMotoForm.addEventListener('submit', evt => {
@@ -9,7 +10,8 @@ addMotoForm.addEventListener('submit', evt => {
     const payload = {
         name: motonameField.value,
         description: motoDescriptionField.value,
-        url: motoUrlField.value
+        url: motoUrlField.value,
+        blanket: motoImgField.value
     }
 
     fetch('http://localhost:3001/motos', { 

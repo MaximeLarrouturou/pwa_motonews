@@ -12,7 +12,7 @@ img
 {
     width: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     left: 0;
     bottom: 155px;
 }
@@ -66,6 +66,11 @@ a, .mdl-navigation
 {
   width: auto;
   height: 350px;
+  justify-content: center;
+}
+.addArticle
+{
+  background-color: rgb(255,64,129);
 }
 .demo-card-wide > .mdl-card__title 
 {
@@ -73,13 +78,6 @@ a, .mdl-navigation
   font-weight: bolder;
   height: 220px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e0e0e0+1,ededed+100 */
-background: #e0e0e0; /* Old browsers */
-background: -moz-linear-gradient(left,  #e0e0e0 1%, #ededed 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  #e0e0e0 1%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  #e0e0e0 1%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ededed',GradientType=1 ); /* IE6-9 */
-
-
 }
 .demo-card-wide > .mdl-card__menu 
 {
@@ -91,13 +89,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', end
   font-size: 1.1rem;
   line-height: 22px;
 }
-.mdl-button--fab 
+a, .mdl-button--fab
 {
-  bottom: 130px;
-  right: 20px;
-  position: fixed;
-  z-index: 1;;
-  background-color: #393939!important;
+ margin: 0 auto;
+ 
+}
+.mdl-button--colored
+{
   color:#ffffff!important;
 }
 .form
