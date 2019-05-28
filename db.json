@@ -11,7 +11,7 @@
       "id": 2,
       "name": "WSBK",
       "description": "Championnat du monde SuperBike",
-      "url": "https://www.worldsbk.com/fr",
+      "url": "http://www.worldsbk.com/fr",
       "blanket": "http://photos.worldsbk.com/2019/05/12/20190512_sat2_wsbk_05_ita_sbk_sprace_001.mov.11_36_08_23_big.jpg"
     },
     {
@@ -41,7 +41,7 @@
       "id": 5,
       "name": "MFJ Superbike",
       "description": "Tous sur le championnat de superbike Japonais",
-      "url": "https://www.superbike.jp/",
+      "url": "http://www.superbike.jp/",
       "blanket": "http://marcglasze.de/images/blog/grid/free-patterns-grid.jpg"
     },
     {
@@ -82,7 +82,7 @@
     {
       "name": "RFME",
       "description": "Tous savoir sur le superbike espagnol",
-      "url": "https://www.rfme.com/web/",
+      "url": "http://www.rfme.com/web/",
       "blanket": "http://marcglasze.de/images/blog/grid/free-patterns-grid.jpg",
       "id": 11
     },
