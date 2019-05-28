@@ -2,8 +2,9 @@
   "name": "pwa_moto",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "js/index.js",
   "scripts": {
+    "build": "webpack --mode development",
     "start": "live-server --port=3000",
     "jsonserver": "json-server -p 3001 --watch db.json",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,5 +15,9 @@
   "dependencies": {
     "live-server": "^1.2.1",
     "web-push": "^3.3.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
   }
 }

@@ -8,13 +8,20 @@ a
   text-decoration: none;
   color: #ffffff;
 }
+.white
+{
+  color:#ffffff;
+}
 img
 {
     width: 100%;
-    position: absolute;
     z-index: 0;
     left: 0;
     bottom: 155px;
+}
+.logo
+{
+  width:40px;
 }
 h2
 {
@@ -62,26 +69,9 @@ a, .mdl-navigation
 {
   color:#000000;
 }
-.demo-card-wide.mdl-card 
-{
-  width: auto;
-  height: 350px;
-  justify-content: center;
-}
 .addArticle
 {
   background-color: rgb(255,64,129);
-}
-.demo-card-wide > .mdl-card__title 
-{
-  color: #fff;
-  font-weight: bolder;
-  height: 220px;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e0e0e0+1,ededed+100 */
-}
-.demo-card-wide > .mdl-card__menu 
-{
-  color: #fff;
 }
 .mdl-card__supporting-text
 {
@@ -94,14 +84,32 @@ a, .mdl-button--fab
  margin: 0 auto;
  
 }
-.mdl-button--colored
-{
-  color:#ffffff!important;
-}
 .form
 {
   text-align: center;
 }
+.demo-card-square.mdl-card {
+  width: auto;
+  height: 320px;
+  justify-content: center;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url("http://localhost:3001/sbk/${t.blanket}") bottom right 15% no-repeat #46B6AC;
+}
+.demo-card-square > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.demo-card-square > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.mdl-card__menu {
+  color: #fff;
+}
+
 /* MATERIEL DESIGN */
 
 /* MEDIA QUERY */
