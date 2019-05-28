@@ -1,7 +1,7 @@
 {
   "name": "MotoNews",
   "short_name": "mnews",
-  "theme_color": "#f44336",
+  "theme_color": "#46B6AC",
   "background_color": "#f2f2f2",
   "display": "standalone",
   "Scope": "/",

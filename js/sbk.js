@@ -42,7 +42,7 @@ function loadTechnologies(sbk) {
                         </div>
                     `;
 
-                    console.log('Liste de  motos ', sbk);
+                    console.log('Liste de  sbk ', sbk);
                 });
                 
             })

@@ -21,7 +21,7 @@ img
 }
 .logo
 {
-  width:40px;
+  width:60px;
 }
 h2
 {
@@ -58,6 +58,7 @@ a, .mdl-navigation
 {
   padding: 12px;
   margin-top: 1.27em;
+  display: none;
 }
 .mdl-layout__drawer-button 
 {
@@ -109,10 +110,15 @@ a, .mdl-button--fab
 .mdl-card__menu {
   color: #fff;
 }
+.mdl-layout__drawer .hide
+  {
+    display: none;
+  }
 
 /* MATERIEL DESIGN */
 
 /* MEDIA QUERY */
+
 @media only screen and (max-width:800px)
 { 
   #motos, #sbk
@@ -120,7 +126,13 @@ a, .mdl-button--fab
     width: auto;
   }
 }
-
+@media only screen and (max-width:1024px)
+{ 
+  .mdl-layout__header .mdl-layout__drawer-button 
+  {
+    display: flex;
+  }
+}
 @media only screen and (max-width:1440px)
 { 
   #motos, #sbk
