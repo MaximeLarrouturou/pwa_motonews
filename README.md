@@ -1,4 +1,6 @@
-# Progressiv Web App 
+<img src="repository-open-graph-template[MotoNews].jpg"/>
+
+# Progressiv Web App - Moto News
 
 
 ## npm run jsonserver
