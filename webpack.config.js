@@ -11,10 +11,12 @@ const handler = (percentage, message, ...args) => {
   };
 
 module.exports = {
-    entry: './src/index.js',
+    entry: 
+        './js/index.js',
+        
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        path: path.join(__dirname, 'dist'),
+        filename: '[name].js'
     },
     module: {
         rules:[
