@@ -1,0 +1,97 @@
+{
+  "motos": [
+    {
+      "id": 1,
+      "name": "MotoGP",
+      "description": "Toutes les dernières news concernant le Championnat du Monde moto. Tous les pilotes, résultats, calendrier, courses et circuits de chaque Grand Prix',",
+      "url": "https://www.motogp.com/fr",
+      "blanket": "http://www.hiskill.it/wp-content/uploads/2018/10/motogp-cover-post.jpg"
+    },
+    {
+      "id": 2,
+      "name": "WSBK",
+      "description": "Championnat du monde SuperBike",
+      "url": "http://www.worldsbk.com/fr",
+      "blanket": "http://photos.worldsbk.com/2019/05/12/20190512_sat2_wsbk_05_ita_sbk_sprace_001.mov.11_36_08_23_big.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Motorsport",
+      "description": "Tous sur la moto - Actualités, classements, résultats des courses, statistiques, photos",
+      "url": "https://fr.motorsport.com/category/moto/",
+      "blanket": "http://marcglasze.de/images/blog/grid/free-patterns-grid.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Supermotard France",
+      "description": "Championnat de France Supermotard",
+      "url": "https://www.supermotard-france.fr/",
+      "blanket": "https://www.supermotard-france.fr/wp-content/uploads/2019/04/slider-18958-1330x600.jpg"
+    },
+    {
+      "name": "Macau GP",
+      "description": "Tous sur le Grand Prix de Macau",
+      "url": "https://www.macau.grandprix.gov.mo/zh-hant/",
+      "blanket": "http://3.bp.blogspot.com/-G1ougtPVx_E/Ts6IkcwJszI/AAAAAAAADHE/q1-LTakoRks/s1600/ras%2Bdu%2Bmur.jpg",
+      "id": 5
+    }
+  ],
+  "sbk": [
+    {
+      "id": 5,
+      "name": "MFJ Superbike",
+      "description": "Tous sur le championnat de superbike Japonais",
+      "url": "http://www.superbike.jp/",
+      "blanket": "http://marcglasze.de/images/blog/grid/free-patterns-grid.jpg"
+    },
+    {
+      "id": 6,
+      "name": "BSB",
+      "description": "Tous sur le championnat de superbike British",
+      "url": "https://www.britishsuperbike.com/",
+      "blanket": "http://marcglasze.de/images/blog/grid/free-patterns-grid.jpg"
+    },
+    {
+      "id": 7,
+      "name": "MOTOAMERICA",
+      "description": "Tous sur le championnat de superbike Américain",
+      "url": "https://motoamerica.com/",
+      "blanket": "http://marcglasze.de/images/blog/grid/free-patterns-grid.jpg"
+    },
+    {
+      "id": 8,
+      "name": "FSBK",
+      "description": "Tous sur le championnat de superbike Français",
+      "url": "https://www.fsbk.fr/",
+      "blanket": "http://marcglasze.de/images/blog/grid/free-patterns-grid.jpg"
+    },
+    {
+      "name": "ASBK",
+      "description": "Tous sur le championnat de superbike d'australie",
+      "url": "https://www.asbk.com.au/",
+      "blanket": "http://marcglasze.de/images/blog/grid/free-patterns-grid.jpg",
+      "id": 9
+    },
+    {
+      "name": "CSBK",
+      "description": "Tous savoir sur le championnat de superbike canadiens",
+      "url": "https://www.csbk.ca/",
+      "blanket": "http://marcglasze.de/images/blog/grid/free-patterns-grid.jpg",
+      "id": 10
+    },
+    {
+      "name": "RFME",
+      "description": "Tous savoir sur le superbike espagnol",
+      "url": "http://www.rfme.com/web/",
+      "blanket": "http://marcglasze.de/images/blog/grid/free-patterns-grid.jpg",
+      "id": 11
+    },
+    {
+      "name": "SuperBikeBrazil",
+      "description": "Retrouvez les actualités du Superbike Brésilien",
+      "url": "http://superbike.com.br/",
+      "blanket": "http://marcglasze.de/images/blog/grid/free-patterns-grid.jpg",
+      "id": 12
+    }
+  ]
+}

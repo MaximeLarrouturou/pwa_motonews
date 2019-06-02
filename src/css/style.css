@@ -1,0 +1,143 @@
+/* CSS */
+body 
+{
+  background: #f2f2f2;
+}
+a
+{
+  text-decoration: none;
+  color: #ffffff;
+}
+.white
+{
+  color:#ffffff;
+}
+img
+{
+    width: 100%;
+    z-index: 0;
+    left: 0;
+    bottom: 155px;
+}
+.logo
+{
+  width:80px;
+}
+h2
+{
+  z-index: 2;
+}
+#motos, #sbk
+{
+  width: 1440px;
+}
+/* CSS */
+
+/* MATERIEL DESIGN */
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button 
+{
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: black;
+}
+.mdl-layout__header, .mdl-layout__header-row
+{
+  background-color: #ffffff;
+  height: 5em;
+}
+.footer
+{
+  height:8rem;
+}
+a, .mdl-navigation
+{
+  color: #232526!important;
+}
+.mdl-layout__header .mdl-layout__drawer-button 
+{
+  padding: 12px;
+  margin-top: 1.27em;
+  display: none;
+}
+.mdl-layout__drawer-button 
+{
+  height: auto;
+  width: auto;
+  color: #232526!important;
+}
+.mdl-layout-title .mobile 
+{
+  color:#000000;
+}
+.addArticle
+{
+  background-color: rgb(255,64,129);
+}
+.mdl-card__supporting-text
+{
+  height:80px;
+  font-size: 1.1rem;
+  line-height: 22px;
+}
+a, .mdl-button--fab
+{
+ margin: 0 auto;
+ 
+}
+.form
+{
+  text-align: center;
+}
+.demo-card-square.mdl-card {
+  width: auto;
+  height: 320px;
+  justify-content: center;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url("http://localhost:3001/sbk/${t.blanket}") bottom right 15% no-repeat #46B6AC;
+}
+.demo-card-square > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.demo-card-square > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.mdl-card__menu {
+  color: #fff;
+}
+.mdl-layout__drawer .hide
+  {
+    display: none;
+  }
+
+/* MATERIEL DESIGN */
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:800px)
+{ 
+  #motos, #sbk
+  {
+    width: auto;
+  }
+}
+@media only screen and (max-width:1024px)
+{ 
+  .mdl-layout__header .mdl-layout__drawer-button 
+  {
+    display: flex;
+  }
+}
+@media only screen and (max-width:1440px)
+{ 
+  #motos, #sbk
+  {
+    width: auto;
+  }
+}
+/* MEDIA QUERY */
