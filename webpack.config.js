@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+//const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const handler = (percentage, message, ...args) => {
     const percent = (percentage * 100).toFixed(2);
@@ -10,36 +10,61 @@ const handler = (percentage, message, ...args) => {
     console.info(`${percent}%`, msg, argsOrDefault);
   };
 
+
 module.exports = {
-    entry: 
-        './js/index.js',
-        
+    entry: {
+        index: './src/js/index.js',
+        motos: './src/js/motos.js',
+        sbk: './src/js/sbk.js',
+        addMoto: './src/js/add_moto.js',
+        addSbk: './src/js/add_sbk.js',
+        //pushServer: './src/js/pushServer.js',
+        //sw: './src/sw.js',
+    },
+  
     output: {
-        path: path.join(__dirname, 'dist'),
-        filename: '[name].js'
+        path: path.resolve(__dirname, 'dist'),
+        filename: './js/[name].js'
     },
     module: {
         rules:[
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: 'babel-loader'
+                loader: 'babel-loader'
             },
+            //{
+            //    test:/\.css$/, 
+            //    use: ExtractTextPlugin.extract({ 
+            //            fallback:'style-loader',
+            //            use:['css-loader','sass-loader'],
+            //        })
+            //},
             {
-                test:/\.css$/,
+                test: /\.html$/,
                 use: [
-                    'style-loader', 
-                    'css-loader'
-                ]
-            },
-        ]
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: './pages/[name].[ext]'
+                        }
+                    }
+                ],
+                exclude: path.resolve(__dirname, 'src/index.html')
+            }
+         ]
     },
+
     plugins:[
         new webpack.ProgressPlugin(handler),
+        //new ExtractTextPlugin({
+        //    filename:'style.css'
+        //}),
         new HtmlWebpackPlugin({
             hash: true,
             title: 'Moto News',
-            template: './src/index.html'
+            template: './src/index.html'  
         })
     ]
-};
+    
+}
