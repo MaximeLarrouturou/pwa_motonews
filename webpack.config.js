@@ -3,13 +3,14 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-
 const handler = (percentage, message, ...args) => {
     const percent = (percentage * 100).toFixed(2);
     const msg = message.toUpperCase();
     const argsOrDefault = (args.length === 0) ? "" : args.join(' | ');
     console.info(`${percent}%`, msg, argsOrDefault);
   };
+
+  
 
 
 module.exports = {

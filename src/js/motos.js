@@ -1,4 +1,3 @@
-import ('../css/style.css');
 
 const motosDiv = document.querySelector('#motos');
 

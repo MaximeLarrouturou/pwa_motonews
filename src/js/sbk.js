@@ -1,4 +1,5 @@
 import ('../css/style.css');
+
 console.log('hello depuis main');
 const sbkDiv = document.querySelector('#sbk')
 

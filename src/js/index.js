@@ -1,7 +1,11 @@
-import ('../pages/superbike.html');
-import ('../pages/add_moto.html');
-import ('../pages/add_sbk.html');
+import '../pages/superbike.html';
+import '../pages/add_moto.html';
+import '../pages/add_sbk.html';
+
 import ('../css/style.css');
+
+import "core-js/modules/es6.promise";
+import "core-js/modules/es6.array.iterator";
 //import _ from 'lodash';
 
 
