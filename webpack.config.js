@@ -1,7 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-//const ExtractTextPlugin = require('extract-text-webpack-plugin');
+//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 
 const handler = (percentage, message, ...args) => {
     const percent = (percentage * 100).toFixed(2);
@@ -16,8 +17,8 @@ module.exports = {
         index: './src/js/index.js',
         motos: './src/js/motos.js',
         sbk: './src/js/sbk.js',
-        addMoto: './src/js/add_moto.js',
-        addSbk: './src/js/add_sbk.js',
+        add_moto: './src/js/add_moto.js',
+        add_sbk: './src/js/add_sbk.js',
         //pushServer: './src/js/pushServer.js',
         //sw: './src/sw.js',
     },
@@ -33,13 +34,10 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader'
             },
-            //{
-            //    test:/\.css$/, 
-            //    use: ExtractTextPlugin.extract({ 
-            //            fallback:'style-loader',
-            //            use:['css-loader','sass-loader'],
-            //        })
-            //},
+            {
+                test:/\.css$/, 
+                use: ['style-loader', 'css-loader']
+            },
             {
                 test: /\.html$/,
                 use: [
@@ -51,20 +49,30 @@ module.exports = {
                     }
                 ],
                 exclude: path.resolve(__dirname, 'src/index.html')
-            }
-         ]
+            },
+         ],
     },
 
     plugins:[
         new webpack.ProgressPlugin(handler),
-        //new ExtractTextPlugin({
-        //    filename:'style.css'
-        //}),
+        //new BundleAnalyzerPlugin(),
         new HtmlWebpackPlugin({
             hash: true,
             title: 'Moto News',
             template: './src/index.html'  
-        })
-    ]
+        }),
+        
+    ],
+    //optimization: {
+    //    splitChunks: {
+    //        cacheGroups: {
+    //           node_vendors: {
+    //               test: /[\\/]node_modules[\\/]/,
+    //               chunks: "all",
+    //               priority: 1,
+    //           } 
+    //        }
+    //    }
+    //}
     
 }

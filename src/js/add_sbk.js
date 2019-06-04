@@ -1,3 +1,4 @@
+import ('../css/style.css');
 const sbknameField = document.querySelector('#sbk-name');
 const sbkDescriptionField = document.querySelector('#sbk-description');
 const sbkUrlField = document.querySelector('#sbk-url');

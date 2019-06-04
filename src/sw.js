@@ -4,16 +4,16 @@ self.addEventListener('install', (evt) => {
     console.log(`sw installé à ${new Date().toLocaleTimeString()}`);       
     const cachePromise = caches.open(cacheName).then(cache => {
         return cache.addAll([
-            'index.html',
-            'pages/superbike.html',
-            'pages/add_moto.html', 
-            'pages/add_sbk.html',           
-            'js/add_moto.js',
-            'js/add_sbk.js',
-            'js/index.js',
-            'js/sbk.js',
-            'js/motos.js',
-            'css/style.css',
+            './index.html',
+            './pages/superbike.html',
+            './pages/add_moto.html', 
+            './pages/add_sbk.html',           
+            './js/add_moto.js',
+            './js/add_sbk.js',
+            './js/index.js',
+            './js/sbk.js',
+            './js/motos.js',
+            './css/style.css',
             '../manifest.json'
         ])
         .then(console.log('cache initialisé'))

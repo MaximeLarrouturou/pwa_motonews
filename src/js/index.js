@@ -1,7 +1,9 @@
-import '../pages/superbike.html';
-import '../pages/add_moto.html';
-import '../pages/add_sbk.html';
-//import '../css/style.css';
+import ('../pages/superbike.html');
+import ('../pages/add_moto.html');
+import ('../pages/add_sbk.html');
+import ('../css/style.css');
+//import _ from 'lodash';
+
 
 function urlBase64ToUint8Array(base64String) {
     const padding = '='.repeat((4 - base64String.length % 4) % 4);

@@ -1,3 +1,4 @@
+import ('../css/style.css');
 const motonameField = document.querySelector('#moto-name');
 const motoDescriptionField = document.querySelector('#moto-description');
 const motoUrlField = document.querySelector('#moto-url');
