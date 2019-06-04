@@ -110,7 +110,7 @@ self.addEventListener('sync', event => {
 
                 return Promise.all(unsynced.map(moto => {
                     console.log('Attempting fetch', moto);
-                    fetch('https://restapizeit-gklh2jcm9.now.sh/motos', { //https://restapizeit-gklh2jcm9.now.sh/
+                    fetch('http://localhost:3001/motos', { //https://restapizeit-gklh2jcm9.now.sh/
                         headers: {
                             'Accept': 'application/json',
                             'Content-Type': 'application/json'
