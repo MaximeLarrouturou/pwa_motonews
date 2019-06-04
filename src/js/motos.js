@@ -3,13 +3,22 @@ const motosDiv = document.querySelector('#motos');
 
 function loadTechnologies(motos) {
     //On ajoute le fetch('http://localhost:3001/motos') pour qu'il fasse une requête sur l'URL du serveur (pour ce cas sur db.json qui est sur port généré par json-server)
-    fetch('http://localhost:3001/motos')
+    fetch('https://restapizeit-gklh2jcm9.now.sh/motos') //https://restapizeit-gklh2jcm9.now.sh/
         //
         // La promesse est envoyé
         //
-        .then(response => { //envoi de la promesse
-            response.json() // réponse à la promesse du JSON
-                .then(motos => { //si la promesse est résolu il envoi le JSON
+        //.then(response => { //envoi de la promesse
+        //    response.json() // réponse à la promesse du JSON
+        //        .then(motos => { //si la promesse est résolu il envoi le JSON
+                
+                    .then(response => response.json())
+                    .then(motos => {
+                        console.log('response from loadTechnologies', motos);
+                        // mongodb is unreachable by node is, so cache is not used when on localhost
+                        if(motos.keys().count === 0) {
+                            allMotos = ['Serveur accessible mais MongoDB inacessible'];
+                        }
+                
                 const allMotos = motos.map(t => `
                 <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
                 <div class="demo-card-square mdl-card mdl-shadow--2dp">
@@ -39,7 +48,7 @@ function loadTechnologies(motos) {
                         </div>
                     `;
                     console.log('Liste de  motos ', motos);
-                });
+               
         })
         // Si motos est rejetée
         .catch(console.error);

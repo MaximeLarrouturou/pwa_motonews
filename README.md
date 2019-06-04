@@ -10,6 +10,9 @@
 ## npm start
   * If npm start don't run, so use command line `npm install`.
 
+## Use import dynamic
+  * In `.babelrc` paste `"plugins": ["@babel/plugin-syntax-dynamic-import"]`. And Install `npm install --save-dev @babel/plugin-syntax-dynamic-import`
+  
 1. Création de l'application destinée à devenir une PWA
 > Récupération du code source et configuration d'un serveur live-server
 > Créer un API REST à l'aide de json-server
