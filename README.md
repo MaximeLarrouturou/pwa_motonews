@@ -11,6 +11,8 @@
 
 ---
 
+<img src="homePage.png"/>
+
 # Procèdure de Développement de la PWA
   
 1. Création de l'application destinée à devenir une PWA
