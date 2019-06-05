@@ -33,7 +33,7 @@ addMotoForm.addEventListener('submit', evt => {
                 console.log('we are probably offline');
                 navigator.serviceWorker.ready.then(registration => {
                     // put techno in IndexedDB for later syncing
-                    return putMoto(payload, motoDb.id).then(() => { //payload.id
+                    return putMoto(payload, payload.id).then(() => { //payload.id
                         // register a sync with the ServiceWorker
                         return registration.sync.register('sync-motos')
                     });
