@@ -96,8 +96,7 @@ a, .mdl-button--fab
 }
 .demo-card-square > .mdl-card__title {
   color: #fff;
-  background:
-    url("http://localhost:3001/sbk/${t.blanket}") bottom right 15% no-repeat #46B6AC;
+  background: bottom right 15% no-repeat #46B6AC;
 }
 .demo-card-square > .mdl-card__actions > .material-icons {
   padding-right: 10px;
