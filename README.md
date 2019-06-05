@@ -18,14 +18,14 @@
 
 > Créer une API REST à l'aide de json-server
 
--
+##
 
 2. Le Service Worker
 > Enregistrement d'un service worker  
 
 > Interception de requêtes HTTP par un service worker
 
--
+##
 
 3. Gestion du cache
 > Détection de l'état de la connexion internet et affichage d'une page d'information  
@@ -42,7 +42,7 @@
 
 > Récupérer les réponses depuis le cache
 
--
+##
 
 4. Gestion avancée du cache
 > Stratégie de récupération en cache, puis réseau si le contenu n'est pas cache  
@@ -55,12 +55,12 @@
 
 > Supprimer les anciennes instances de cache
 
--
+##
 
 5. Rendre votre application web installable
 > Création du fichier `manifest.json`
 
--
+##
 
 6. Notifications
 > Notifications non persistantes (depuis `index.js`)  
@@ -73,7 +73,7 @@
 
 > Fermer programmatiquement une notification
 
--
+##
 
 7. Les notifications push
 > Intercepter une notification push et afficher son contenu dans une notification  
@@ -86,7 +86,7 @@
 
 > Envoyer une notification push depuis Node
 
--
+##
 
 8. Background Sync
 > Infrastructure utilisation de Mongodb, mongoose, body-parser et express.  
@@ -95,7 +95,7 @@
 
 > Background Sync côté Service Worker avec indexDb
 
--
+##
 
 9. Faire un audit de la PWA et améliorer le score
 > Correction de bugs en production puis audit  
