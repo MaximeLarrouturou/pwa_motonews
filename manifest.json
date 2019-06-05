@@ -1,11 +1,11 @@
 {
   "name": "MotoNews",
-  "short_name": "mnews",
+  "short_name": "MotoNews",
   "theme_color": "#46B6AC",
   "background_color": "#f2f2f2",
   "display": "standalone",
-  "Scope": "/",
-  "start_url": "/",
+  "scope": "/",
+  "start_url": ".",
   "icons": [
     {
       "src": "./src/images/icons/icon-72x72.png",

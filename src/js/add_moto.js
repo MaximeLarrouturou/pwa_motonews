@@ -17,7 +17,7 @@ addMotoForm.addEventListener('submit', evt => {
         //blanket: motoImgField.value
     }
 
-    fetch('http://localhost:3001/motos', { //https://https://restapizeit-gklh2jcm9.now.sh/
+    fetch('http://localhost:3001/motos', {
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json'
