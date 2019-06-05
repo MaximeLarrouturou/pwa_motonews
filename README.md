@@ -2,16 +2,12 @@
 
 # Progressiv Web App - Moto News
 
----
-
 ## npm run jsonserver
   * If **jsonserver** don't run, so use command line `npm install -g json-server`.
   * Using **live-server**, your browser refreshed automatically, use command line `npm install -g live-server`.
 
 ## npm start
   * If npm start don't run, so use command line `npm install`.
-
----
 
 ## Procèdure de Développement de la PWA
   
@@ -21,50 +17,74 @@
 > Créer une API REST à l'aide de json-server
 
 2. Le Service Worker
-> Enregistrement d'un service worker
+> Enregistrement d'un service worker  
+
 > Interception de requêtes HTTP par un service worker
 
 3. Gestion du cache
-> Détection de l'état de la connexion internet et affichage d'une page d'information
-> A propos des erreurs durant la frappe
-> **CacheStorage :** un 'store' pour les instances de cache + création d'instances
-> **Cache API :** utilisation d'une instance de cache, mettre des fichiers en cache
-> Gérer la mise en cache depuis le service worker
-> Revue du code permettant de poster une nouveau post
-> Récupérer les réponses depuis le cache
+> Détection de l'état de la connexion internet et affichage d'une page d'information  
+
+> A propos des erreurs durant la frappe  
+
+> **CacheStorage :** un 'store' pour les instances de cache + création d'instances  
+
+> **Cache API :** utilisation d'une instance de cache, mettre des fichiers en cache  
+
+> Gérer la mise en cache depuis le service worker  
+
+> Revue du code permettant de poster une nouveau post  
+
+> Récupérer les réponses depuis le cache  
+
 
 4. Gestion avancée du cache
-> Stratégie de récupération en cache, puis réseau si le contenu n'est pas cache
-> Répondre à une requête en faisant servir par le service worker le cache (suite)
-> Stratégie de récupération sur le réseau puis en cache si réseau non accessible
-> S'assurer que le service worker reste actif à l'aide de waitUntil()
+> Stratégie de récupération en cache, puis réseau si le contenu n'est pas cache  
+
+> Répondre à une requête en faisant servir par le service worker le cache (suite)  
+
+> Stratégie de récupération sur le réseau puis en cache si réseau non accessible  
+
+> S'assurer que le service worker reste actif à l'aide de `waitUntil()`  
+
 > Supprimer les anciennes instances de cache
 
 5. Rendre votre application web installable
 > Création du fichier `manifest.json`
 
 6. Notifications
-> Notifications non persistantes (depuis `index.js`)
-> Options des notifications
-> Notifications persistantes (envoyées depuis le service worker)
-> Options de notifications grâce aux actions
+> Notifications non persistantes (depuis `index.js`)  
+
+> Options des notifications  
+
+> Notifications persistantes (envoyées depuis le service worker)  
+
+> Options de notifications grâce aux actions  
+
 > Fermer programmatiquement une notification
 
 7. Les notifications push
-> Intercepter une notification push et afficher son contenu dans une notification
-> Architecture
-> Génération de vapid keys
-> Récupération ou création d'une souscription auprès d'un push service
+> Intercepter une notification push et afficher son contenu dans une notification  
+
+> Architecture  
+
+> Génération de vapid keys  
+
+> Récupération ou création d'une souscription auprès d'un push service  
+
 > Envoyer une notification push depuis Node
 
 8. Background Sync
-> Infrastructure utilisation de Mongodb, mongoose, body-parser et express.
-> body-parser : `npm install body-parser`, express: `npm install express`, mongoose: `npm install mongoose`, mongodb: `npm install mongodb --save`
+> Infrastructure utilisation de Mongodb, mongoose, body-parser et express.  
+
+> body-parser : `npm install body-parser`, express: `npm install express`, mongoose: `npm install mongoose`, mongodb: `npm install mongodb --save`  
+
 > Background Sync côté Service Worker avec indexDb
 
 9. Faire un audit de la PWA et améliorer le score
-> Correction de bugs en production puis audit
-> Améliorer le score d'audit
+> Correction de bugs en production puis audit  
+
+> Améliorer le score d'audit  
+
 > Améliorer le score d'audit en corrigeant le problème de taille de viewport
 
 # Config webpack
