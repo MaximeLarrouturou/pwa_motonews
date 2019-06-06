@@ -121,6 +121,7 @@ self.addEventListener('sync', event => {
                     })
                         .then(() => {
                             console.log('Sent to server');
+                            console.log('id passé à putMoto', moto.id);
                             return putMoto(Object.assign({}, moto, { unsynced: false }), moto.id); 
                         })
                 }))
