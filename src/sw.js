@@ -1,4 +1,4 @@
-const cacheName = 'MotoNews 1.3.1';
+const cacheName = 'MotoNews' + '1.2.0';
 
 self.importScripts('./js/idb.js', './js/database.js');
 
@@ -54,7 +54,8 @@ self.addEventListener('fetch', evt => {
             caches.open(cacheName).then(cache => cache.put(evt.request, res));
             // we clone it as a response can be read only once (it's like a one time read stream)
             return res.clone();
-        }).catch(err => {
+        })
+        .catch(err => {
             console.log(`${evt.request.url} fetch depuis le service worker`);
             return caches.match(evt.request);
          })
