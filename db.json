@@ -26,9 +26,16 @@
     },
     {
       "name": "Macau GP",
-      "description": "Tous sur le Grand Prix de Macau",
+      "description": "Lancé pour la première fois en octobre 1954 en tant que course de club pour les passionnés d'automobile, le Grand Prix de Macao a évolué pour devenir ce que...",
       "url": "https://www.macau.grandprix.gov.mo/zh-hant/",
       "id": 5
+    },
+    {
+      "id": 1559847071631,
+      "name": "North West 200",
+      "description": "L'International North West 200 est le plus grand événement sportif en plein air d'Irlande.L'International North West 200 est le plus grand événement sportif en plein air d'Irlande.",
+      "url": "https://www.northwest200.org",
+      "unsynced": true
     }
   ],
   "sbk": [
