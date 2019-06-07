@@ -3,7 +3,7 @@ const motosDiv = document.querySelector('#motos');
 
 function loadTechnologies(motos) {
     //On ajoute le fetch('http://localhost:3001/motos') pour qu'il fasse une requête sur l'URL du serveur (pour ce cas sur db.json qui est sur port généré par json-server)
-    fetch('https://apinodejs-g5b2azitl.now.sh/motos') 
+    fetch('https://apinodejs-o5ra386q6.now.sh/motos') 
         //
         // La promesse est envoyé
         //
