@@ -111,7 +111,7 @@ self.addEventListener('sync', event => {
 
                 return Promise.all(unsynced.map(moto => {
                     console.log('Attempting fetch', moto);
-                    fetch('https://apinodejs-mbbjjlthf.now.sh/motos', { 
+                    fetch('http://localhost:3001/motos', { 
                         headers: {
                             'Accept': 'application/json',
                             'Content-Type': 'application/json'

@@ -17,7 +17,7 @@ addMotoForm.addEventListener('submit', evt => {
         //blanket: motoImgField.value
     }
 
-    fetch('https://apinodejs-o5ra386q6.now.sh/motos', {
+    fetch('http://localhost:3001/motos', {
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json'
