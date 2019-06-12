@@ -43,6 +43,13 @@
       "description": "Le Grand Prix d'Ulster se déroule du 5 au 10 août 2019. On prévoit déjà de le rendre plus grand et meilleur que jamais, pour tous les âges.",
       "url": "https://ulstergrandprix.net/",
       "unsynced": true
+    },
+    {
+      "id": 1560343264366,
+      "name": "eFlexFuel",
+      "description": "Avec eFlexFuel, vous n'avez pas à vous soucier de quoi mettre dans le réservoir. Vous pouvez faire le plein E85 ou utiliser n'importe quel mélange. Le capteur d'éthanol détecte automatiquement le mélange utilisé.",
+      "url": "https://eflexfuel.com/fr",
+      "unsynced": true
     }
   ],
   "sbk": [
